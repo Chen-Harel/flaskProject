@@ -43,7 +43,7 @@ def remFromDB():
     if request.method=="POST":
         uName = request.form.get('userName')
         uAge = request.form.get('userAge')
-        cur.execute(f"DELETE FROM userNames WHERE name=? and age=? ('{uName}',{uAge})")
+        cur.execute(f"DELETE FROM userNames WHERE name='{uName}' and age='{uAge}'")
     return render_template("removeFromDB.html")
 
 #Sends database to browser
