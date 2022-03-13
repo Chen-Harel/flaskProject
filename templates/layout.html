@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%block header%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Site - {%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    {%endblock%}
+</head>
+<body>
+    {%block navbar%}
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/addToDb">Add to Database</a>
+            <a href="/removeFromDB">Remove from database</a>
+            <a href="/showDB">Show database</a>
+        </div>
+    {%endblock%}
+    
+    {%block content%}{%endblock%}
+
+    {%block footer%}
+    <div id="footer-section">
+        <footer>&copy; Chen Harel 2022 &nbsp;&nbsp;
+            <div id="footer-links">
+                Find me on: <a href="#linkedIn"><img src="../static/images/linkedin.png" alt="LinkedIn"></a> &nbsp;<a href="#WhatsApp"><img src="../static/images/whatsapp.png" alt="WhatsApp"></a>&nbsp;<a href="#Facebook"><img src="../static/images/facebook.png" alt="Facebook"></a>&nbsp;<a href="#Reddit"><img src="../static/images/reddit.png" alt="Reddit"></a>
+            </div>
+        </footer>
+    </div>
+    {%endblock%}
+</body>
+</html>

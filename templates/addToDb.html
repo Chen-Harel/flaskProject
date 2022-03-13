@@ -1,0 +1,18 @@
+{%extends 'layout.html'%}
+{%block title%}Database{%endblock%}
+{%block content%}
+<h1 class="pushLeft">This is the database page</h1>
+<hr>
+
+<h2 class="pushLeft">Use this page to add people to the database.</h2>
+<p class="pushLeft">Just enter the name and age and hit submit.</p>
+<form class="pushLeft" method="POST">
+    <label class="pushLeft">Name: </label>
+    <input name="userName" type="text">
+    <br>
+    <br>
+    <label class="pushLeft">Age: </label>
+    <input name="userAge" type="number">
+    <input type="submit" name="Submit">
+</form>
+{%endblock%}
