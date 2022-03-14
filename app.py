@@ -51,9 +51,8 @@ def remFromDB():
 def showDB():
     SQL = "SELECT * FROM userNames"
     cur.execute(SQL)
-    dbList = []
-    for i in cur:
-        dbList.append({"Name": i[0], "Age": i[1]})
-    return (json.dumps(dbList))
+    data = cur.fetchall()
+    return render_template('showDB.html', data=data)
+
 if __name__=='__main__':
     app.run(debug=True)
